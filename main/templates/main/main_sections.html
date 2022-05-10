@@ -1,0 +1,57 @@
+<!-- В стадии разработки -->
+{% extends 'main/base.html' %} 
+{% load static %}
+
+{% block title %}Разделы{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css\sections.css' %}">
+{% endblock %}
+
+{% block contant %}
+
+
+<div class="container">
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>01</h2>
+          <h3>Чтение</h3>
+          <a href="{% url 'readcz'%}">Учебные тексты</a>
+          <br>
+          <a href="https://www.databazeknih.cz/eknihy-zdarma-ke-stazeni" target="_blank">Книги</a>
+          <br>
+          <a href="https://www.novinky.cz/" target="_blank">Новости</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>02</h2>
+          <h3>Аудирование</h3>
+          <a href="{% url 'listening'%}">Смотреть фильмы</a>
+          <br>
+          <a href="{% url 'listening'%}">Слушать подкасты</a>
+          <br>
+          <a href="{% url 'listening'%}">Слушать музыку</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>03</h2>
+          <h3>Практика</h3>
+          <a href="{% url 'main-view'%}">Тесты</a>
+          <br>
+          <a href="{% url 'memorygame'%}">Игры</a>
+          <br>
+          <a href="{% url 'makecard'%}">Карточки</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
