@@ -137,7 +137,7 @@ letter-spacing: .5em;
 .grafs{
   margin: auto auto 50px auto;
   width: 1275px;
-  height: 600px;
+  height: 400px;
   border-radius: 25px;
   /* box-shadow: 6px 4px 17px 2px #4646466b */
   box-shadow: 1px 5px 60px 0px #a987a8;
@@ -149,9 +149,19 @@ letter-spacing: .5em;
   float: left;
   margin-right: 20px;
   text-align: center;
+  position: relative;
 }
 
-@media only screen and (max-width: 730px) {
+#myChart{
+  position: absolute;
+  top: 13%;
+}
+
+.content{
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 850px) {
   .card_content{
     width: 300px;
   }
@@ -160,5 +170,9 @@ letter-spacing: .5em;
   }
   .c2{
     margin-right: 10px;
+  }
+  #myChart{
+    position: absolute;
+    top: 25%;
   }
 }

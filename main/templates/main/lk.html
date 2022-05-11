@@ -39,6 +39,7 @@
 
         <div class="col-md-3 text-end">
             <form action="{% url 'logout' %}" method="get">
+                <span class="hello-msg">Добро пожаловать, {{request.user.customer}}</span>
                 <button type="submit" class="btn btn-outline-primary me-2">Выйти</button>
             </form>
         </div>
@@ -95,8 +96,11 @@
             </div>
         </div>
 
-        <div class="grafs c2">Графики
-            <canvas id="myChart" width="200" height="50"></canvas>
+        <div class="grafs c2">
+            <div class="content">
+                <a id="graftext">Успеваемость учащегося</a>
+                <canvas id="myChart" width="200" height="50"></canvas>
+            </div>
         </div>
         
 
