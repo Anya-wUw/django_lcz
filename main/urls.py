@@ -30,6 +30,8 @@ urlpatterns = [
 
     path('lk', views.lkUsers, name='lk'),
     path('main_sections', views.mainsections, name='main_sections'),
+
+    path('songs', views.songs, name='songs'),
     
 
     path('memorygame', views.memory, name="memorygame"),

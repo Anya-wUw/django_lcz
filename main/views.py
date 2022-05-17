@@ -47,6 +47,9 @@ def mainsections(request):
 def memory(request):
     return render(request, 'main/memorygame.html')
 
+def songs(request):
+    return render(request, 'main/songs.html')
+
 @login_required(login_url='login') #незареганный пользователь не может создавать карточки и будет возвращен на стр входа
 def make_card(request):
     error = ''
